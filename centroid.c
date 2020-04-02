@@ -61,8 +61,8 @@ int main( int argc, char **argv )
    MPI_Reduce(&min, &mintotal, 1, MPI_FLOAT, MPI_MIN, 0, MPI_COMM_WORLD);
    if (rank==0) {
       printf("\n\nCentroid = %.2f, %.2f\n", Cx, Cy);
-      printf("Megisti  apostasi = %.2f\n", maxtotal);
-      printf("Elaxisti apostasi = %.2f\n", mintotal);
+      printf("Megisti synoloiki  apostasi = %.2f\n", maxtotal);
+      printf("Elaxisti synoliki apostasi = %.2f\n", mintotal);
    }
    MPI_Finalize();
    return 0;
